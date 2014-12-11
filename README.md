@@ -6,7 +6,7 @@ y facilitarte la migración si estás acostumbrado a usar Javascript o jQuery.
 En ningún caso pretende ser una guía completa ni sustituir a la propia documentación
 del sitio.
 
-** Mini tutoriales **
+**Mini tutoriales**
 * [Conceptos clave](https://github.com/esri-es/iniciacion-a-dojo/tree/master/tutoriales/conceptos-clave)
 * Crear un widget _(Pendiente)_
 * Cargar jQuery como un módulo _(Pendiente)_
@@ -15,6 +15,6 @@ del sitio.
 * [Cheatsheet - (Chuleta)](https://github.com/esri-es/iniciacion-a-dojo/tree/master/recursos/cheatsheet)
 
 ## Errores, dudas y contribuciones
-Te animamos a lanzar las preguntas o peticiones que necesites abriendo "issues".
+Te animamos a lanzar las preguntas o peticiones que necesites abriendo ["issues"](https://github.com/esri-es/iniciacion-a-dojo/issues).
 
-Si quieres contribuir añadiendo algo o corriendo alguna errata no tienes más que hacer un fork de este repositorio y un pull-request :)
+Si quieres contribuir añadiendo algo o corriendo alguna errata no tienes más que [hacer un fork](https://github.com/esri-es/iniciacion-a-dojo/fork) de este repositorio y un [pull request](https://github.com/esri-es/iniciacion-a-dojo/pulls) :)
