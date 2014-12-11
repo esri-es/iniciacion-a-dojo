@@ -1,18 +1,18 @@
 # Tutorial de iniciación a Dojo
 El objetivo de este repositorio es reunir algunos recursos (snippets, cheatsheets, etc.)
-para ayudarte a entender cómo funciona Dojo (1.0)
+para ayudarte a entender cómo funciona Dojo (1.10)
 y facilitarte la migración si estás acostumbrado a usar Javascript o jQuery.
 
 En ningún caso pretende ser una guía completa ni sustituir a la propia documentación
 del sitio.
 
-**Mini tutoriales**
-* [Conceptos clave](https://github.com/esri-es/iniciacion-a-dojo/tree/master/tutoriales/conceptos-clave)
+**Mini tutoriales:**
+* [Empezando desde 0](https://github.com/esri-es/iniciacion-a-dojo/tree/master/tutoriales/conceptos-clave): _Hola Mundo, RequireJS & AMD, dijit, dojox, ..._
 * Crear un widget _(Pendiente)_
 * Cargar jQuery como un módulo _(Pendiente)_
 
-**Recursos**
-* [Cheatsheet - (Chuleta)](https://github.com/esri-es/iniciacion-a-dojo/tree/master/recursos/cheatsheet)
+**Recursos:**
+* [Chuleta](https://github.com/esri-es/iniciacion-a-dojo/tree/master/recursos/cheatsheet) (Migrando a Dojo)
 
 ## Errores, dudas y contribuciones
 Te animamos a lanzar las preguntas o peticiones que necesites abriendo ["issues"](https://github.com/esri-es/iniciacion-a-dojo/issues).
