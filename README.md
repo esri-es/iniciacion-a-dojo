@@ -7,12 +7,12 @@ En ningún caso pretende ser una guía completa ni sustituir a la propia documen
 del sitio.
 
 ** Mini tutoriales **
-* Conceptos clave _(Pendiente)_
+* [Conceptos clave](/esri-es/iniciacion-a-dojo/tree/master/tutoriales/conceptos-clave)
 * Crear un widget _(Pendiente)_
 * Cargar jQuery como un módulo _(Pendiente)_
 
 **Recursos**
-* [Cheatsheet - (Chuleta)](#migrando)
+* [Cheatsheet - (Chuleta)](/esri-es/iniciacion-a-dojo/tree/master/recursos/cheatsheet)
 
 ## Errores, dudas y contribuciones
 Te animamos a lanzar las preguntas o peticiones que necesites abriendo "issues".
