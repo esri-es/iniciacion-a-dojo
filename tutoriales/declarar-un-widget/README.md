@@ -123,4 +123,7 @@ require([
 );
 ```
 
-Aquí puedes ver el ejemplo en funcionamiento.
+Aquí puedes ver [el ejemplo en funcionamiento](http://esri-es.github.io/iniciacion-a-dojo/tutoriales/declarar-un-widget/index.html).
+
+# Lecturas recomendadas:
+asdasd

@@ -25,30 +25,36 @@ define([
     };
   });
 ```
-Para poder usar este módulo introducimos una entrada en dojoConfig.packages
-que defina:
 
-* **name**: cómo llamaremos al módulo en el _require_
-* **location**: la ruta relativa (respecto a baseUrl) donde se encuentra
-nuestro código.
-* **main**: el nombre del fichero sin el _.js_
+**Inicializar _dojoConfig_**:
+
+Vamos a configurar el proyecto para que todos los módulos que empiecen
+por "_myApp/.._" los busque dentro de la carpeta "_js/.._" en nuestra estructura de directorios.
+
+Para ello hemos guardado el fichero anterior en _js/myModule.js_ y hemos
+inicializado _dojoConfig_ de la siguiente manera:
 
 ```javascript
-var dojoConfig = {
-  async: true,
-  baseUrl: 'http://localhost:9090',
-  packages:[{
-      name: 'myModule', location: 'declarar-un-modulo/js/', main: 'my-module'
-  }]
-};
+  var dojoConfig = (function(){
+    var base = location.href.split("/");
+    base.pop();
+    base = base.join("/");
+    return {
+      async: true,
+      isDebug: true,
+      packages:[{
+         name: 'myApp', location: base + '/js'
+     }]
+    };
+  })();
 ```
 
-Y posteriormente ya podemos cargar y utilizar el módulo:
+Hecho esto, ya podemos cargar y utilizar el módulo:
 
 ```javascript
 require([
   'dojo/dom',
-  'myModule',
+  'myApp/myModule',
   'dojo/domReady!'
 ],function(dom,$){
   // Cargamos el contenido el elemento con ID = content
@@ -61,3 +67,5 @@ require([
   $.move("content", 100, 200);
 });
 ```
+
+Aquí podéis ver [el código en funcionamiento](http://esri-es.github.io/iniciacion-a-dojo/tutoriales/declarar-un-modulo/index.html).
