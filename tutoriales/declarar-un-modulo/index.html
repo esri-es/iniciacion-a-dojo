@@ -5,13 +5,18 @@
   <title>Declarar un módulo</title>
 
   <script>
-    var dojoConfig = {
-      async: true,
-      baseUrl: 'http://localhost:9090',
-      packages:[{
-          name: 'myModule', location: 'declarar-un-modulo/js/', main: 'my-module'
-      }]
-    };
+    var dojoConfig = (function(){
+        var base = location.href.split("/");
+        base.pop();
+        base = base.join("/");
+        return {
+          async: true,
+          isDebug: true,
+          packages:[{
+             name: 'myApp', location: base + '/js'
+         }]
+        };
+      })();
   </script>
 
   <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.10.0/dojo/dojo.js"></script>
@@ -19,7 +24,7 @@
   <script>
     require([
       'dojo/dom',
-      'myModule',
+      'myApp/myModule',
       'dojo/domReady!'
     ],function(dom,$){
       // Cargamos el contenido el elemento con ID = content
