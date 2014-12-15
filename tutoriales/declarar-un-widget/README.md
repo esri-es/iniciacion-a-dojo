@@ -1,4 +1,4 @@
-# Declarar un widget
+# Crear un widget
 
 Lo primero y más importante para poder desarrollar
 tus propios widget es entender es el ciclo de vida que tienen.
@@ -78,14 +78,8 @@ Como podemos además se definen 3 métodos más:
 
 ** ¿Y cómo utilizamos el widget recién creado? **
 
-Esta véz lo vamos a hacer de manera ligeramente diferente a como lo hicimos en
-el tutorial Declarar un Módulo.
-
-Esta vez vamos a configurar el proyecto para que todos los módulos que empiecen
-por _myApp/.._ los busque en nuestra estructura de directorios.
-
-Para ello hemos guardado el fichero anterior en js/MyWidget.js y hemos
-establecido dojoConfig de la siguiente manera:
+De la misma manera que hicimos [cuando declarábamos un módulo](https://github.com/esri-es/iniciacion-a-dojo/tree/master/tutoriales/declarar-un-modulo),
+vamos a inicializar la variable dojoConfig:
 
 ```javascript
 var dojoConfig = (function(){
@@ -126,4 +120,13 @@ require([
 Aquí puedes ver [el ejemplo en funcionamiento](http://esri-es.github.io/iniciacion-a-dojo/tutoriales/declarar-un-widget/index.html).
 
 # Lecturas recomendadas:
-asdasd
+Para ampliar documentación recomendamos la lectura de los siguientes artículos
+de la documentación oficial de Dojo:
+* [Understanding _WidgetBase](http://dojotoolkit.org/documentation/tutorials/1.10/understanding_widgetbase/): explicación
+del módulo __WidgetBase_ y cómo este sirve como base para todos los widgets
+en el Dojo Toolkit.
+* [Creating a custom widget](http://dojotoolkit.org/documentation/tutorials/1.10/recipes/custom_widget/): tutorial completo
+sobre cómo crear tus propios widgets, especificamente usando __WidgetBase_ y
+_TemplatedMixin_
+* [Creating Template-based Widgets](http://dojotoolkit.org/documentation/tutorials/1.10/templated/): tutorial
+más centrado en la creación de Widgets que renderizan plantillas de texto.

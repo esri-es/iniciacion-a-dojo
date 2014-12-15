@@ -1,4 +1,4 @@
-# Declarar un módulo
+# Crear un módulo
 
 En un fichero aparte (por ejemplo: my-module.js) definimos un módulo que
 devuelve un objeto con 3 funciones (html, get y move):
