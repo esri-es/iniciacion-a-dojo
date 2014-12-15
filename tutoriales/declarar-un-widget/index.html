@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>Declarar un widget</title>
+
+    <script>
+    var dojoConfig = (function(){
+				var base = location.href.split("/");
+				base.pop();
+				base = base.join("/");
+				return {
+					async: true,
+					isDebug: true,
+					packages:[{
+             name: 'myApp', location: base + '/js'
+         }]
+				};
+			})();
+
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.10.0/dojo/dojo.js"></script>
+
+    <script>
+      require([
+        "myApp/MyWidget",
+        "dojo/domReady!"
+        ],function(MyWidget){
+
+          myWidget = new MyWidget({
+            id: "container",
+            init: 3
+          });
+        }
+      );
+    </script>
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+  </html>

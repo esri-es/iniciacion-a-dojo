@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Declarar un módulo</title>
+
+  <script>
+    var dojoConfig = {
+      async: true,
+      baseUrl: 'http://localhost:9090',
+      packages:[{
+          name: 'myModule', location: 'declarar-un-modulo/js/', main: 'my-module'
+      }]
+    };
+  </script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.10.0/dojo/dojo.js"></script>
+
+  <script>
+    require([
+      'dojo/dom',
+      'myModule',
+      'dojo/domReady!'
+    ],function(dom,$){
+      // Cargamos el contenido el elemento con ID = content
+      $.html("content","Raúl");
+
+      // Recuperamos el valor
+      console.log("Get=", $.get("content"));
+
+      // Aplicamos una animación sobre el elemento
+      $.move("content", 100, 200);
+    });
+  </script>
+</head>
+<body>
+  <h1 id="content"></h1>
+</body>
+
+</html>
