@@ -10,7 +10,7 @@ del sitio.
 * [Empezando desde 0](https://github.com/esri-es/iniciacion-a-dojo/tree/master/tutoriales/conceptos-clave): _Hola Mundo, RequireJS & AMD, dijit, dojox, ..._
 * [Crear un módulo](https://github.com/esri-es/iniciacion-a-dojo/tree/master/tutoriales/declarar-un-modulo/): para encapsular y reutilizar código.
 * [Crear un widget de Dijit](https://github.com/esri-es/iniciacion-a-dojo/tree/master/tutoriales/declarar-un-widget): la biblioteca de interfaz de usuario de Dojo.
-* Cargar jQuery como un módulo _(Pendiente)_
+* [Cargar jQuery como un módulo](https://github.com/esri-es/iniciacion-a-dojo/tree/master/tutoriales/cargar-jquery): 
 
 **Recursos:**
 * [Chuleta](https://github.com/esri-es/iniciacion-a-dojo/tree/master/recursos/cheatsheet) (Migrando a Dojo)

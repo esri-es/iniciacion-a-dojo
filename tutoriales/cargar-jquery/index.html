@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cargar jQuery como módulo</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+  
+  <script>
+    var dojoConfig = (function(){
+      var base = location.href.split("/");
+      base.pop();
+      base = base.join("/");
+      return {
+        async: true,
+        isDebug: true,
+        parseOnLoad: false,
+        packages:[{
+          name: 'jquery', 
+          location: 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1', 
+          main: 'jquery' 
+       }]
+      };
+    })();
+  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.10.0/dojo/dojo.js"></script>
+  <script>
+  
+    require([
+      'jquery',
+      'dojo/domReady!'
+    ], function($) {
+
+      $("#contenedor").html("Ya funciona jQuery ^_^");
+      
+    });
+  </script>
+
+<body>
+  <div id="contenedor"></div>
+</body>
+</html>
