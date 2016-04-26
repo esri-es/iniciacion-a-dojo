@@ -1,0 +1,31 @@
+<html>
+<head>
+  <script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.3/dojo/dojo.js"
+          data-dojo-config="async: true"
+  ></script>
+
+  <script>
+    require([
+      "dojo/dom-construct", 
+      "dojo/dom", 
+      "dojo/on", 
+      "dojo/domReady!"
+    ],function(domConstruct, dom, on){
+      
+      on(dom.byId("create-boton"), "click", function(){
+        
+        var btn = domConstruct.toDom("<button>Botón dinámico</button>");
+        on(btn, "click", function(){
+          alert("Funciona!");
+        });
+
+        domConstruct.place(btn, "container");
+      });
+    });
+  </script>
+</head>
+<body>
+  <button id="create-boton">Crear botón</button>
+  <div id="container"></div>
+</body>
+</html>
